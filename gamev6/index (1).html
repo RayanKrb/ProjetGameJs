@@ -1,0 +1,41 @@
+<link 
+    href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+    rel="stylesheet"
+>
+<style>
+    body {
+        margin: 0;
+        background-color: black;
+        background-image: url(bg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+</style>
+<link rel="shortcut icon" type="image/png" href="logo.png">
+<title>Javavengers</title>
+
+<div class= "fixed text-white text-sm ml-2 mt-1 select-none">
+    <span class="text-white">Score: </span><span id="scoreEl">0</span>
+</div>
+<div class="fixed inset-0 flex items-center justify-center" id="modalEl">
+    <div class="bg-white max-w-md w-full p-6 text-center">
+        <h1 class="text-4xl font-bold leading-none" id="bigScoreEl">0</h1>
+        <p class="text-sm text-gray-700 mb-4">Points</p>
+        <div>
+            <button class="bg-blue-500 text-white w-full py-3 
+            rounded-full text-sm" id="startGameBtn">
+                Start Game
+            </button>
+        </div>
+    </div>
+</div> 
+<canvas id ="canvas"></canvas>
+<img id="ball" width="0" height="0" src="img_ball.png.png" alt="Ennemy">
+<img id="sprite" width="0" height="0" src="sprite.png" alt="Player">
+<img id="fb" width="0" height="0" src="fireball.png" alt="Fireball">
+<img id="mariostar" hidden src="mariostar.png" alt="Mariostar">
+<audio id="audio" src="audio.mp3" loop="true"></audio>
+<audio id="gameover" src="gameover.mp3"></audio>
+<audio id="explosion" src="explosion.mp3"></audio>
+<audio id="star" src="star.mp3"></audio>
+<script  src="./index.js"></script>
